@@ -1,0 +1,12 @@
+(1) The HT-SELEX data used in this study from Jolma et al. 2013 and Yin et al. 2017 
+are available in the European Nucleotide Archive (ENA) 
+under accession code ERP001824, ERP001826, and PRJEB979716,17. 
+
+(2) The SelexGLM data used in this study are available in the Sequence Read Archive (SRA) 
+under BioProject PRJNA37902218. 
+
+
+Using SRA (AR_GR_SELEX_SEQ (SRR5340731))
+prefetch SRR5340731
+fastq-dump SRR5340731
+

@@ -1,0 +1,135 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.5 (Release date: Thu Sep 14 08:48:04 2023 +1000)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.5.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= /data/bin_4.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme /data/bin_4.fasta -dna -o -nostatus -maxw 6 -minw 6 -nmotifs 1 -mod zoops -objfun classic -revcomp -markov_order 0 -o /data/bin_4.fasta_6mers 
+
+model:  mod=         zoops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: + -
+width:  minw=            6    maxw=            6
+nsites: minsites=        2    maxsites=     4498    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=           35984    N=            4498
+sample: seed=            0    hsfrac=          0
+        searchsize=  35984    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.358 C 0.142 G 0.142 T 0.358 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.358 C 0.142 G 0.142 T 0.358 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TATCDN MEME-1	width =   6  sites = 704  llr = 3732  E-value = 9.6e-036
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TATCDN MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :a::43
+pos.-specific     C  :::a:3
+probability       G  ::::32
+matrix            T  a:a:32
+
+         bits    2.8    *  
+                 2.5    *  
+                 2.3    *  
+                 2.0    *  
+Relative         1.7    *  
+Entropy          1.4 ****  
+(7.6 bits)       1.1 ****  
+                 0.8 ****  
+                 0.6 ****  
+                 0.3 ***** 
+                 0.0 ------
+
+Multilevel           TATCAA
+consensus                TC
+sequence                 GT
+                          G
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATCDN MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 6 n= 13494 bayes= 6.44048 E= 9.6e-036 
+ -1610  -1610  -1610    148 
+   148  -1610  -1610  -1610 
+ -1610  -1610  -1610    148 
+ -1610    281  -1610  -1610 
+    14  -1610     98    -13 
+   -25     82     50    -54 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATCDN MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 6 nsites= 704 E= 9.6e-036 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.393466  0.000000  0.279830  0.326705 
+ 0.301136  0.251420  0.201705  0.245739 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TATCDN MEME-1 regular expression
+--------------------------------------------------------------------------------
+TATC[ATG][ACTG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 37.66 secs.
+
+********************************************************************************
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 33e6ca60d186
+
+********************************************************************************
