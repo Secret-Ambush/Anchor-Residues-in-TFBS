@@ -1,0 +1,1 @@
+X	Y	Intensity(Z)	SmoothInt(Z)	Sequence	SequenceReverse	 mismatch
